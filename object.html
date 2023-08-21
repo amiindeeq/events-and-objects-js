@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="font-size: 30px;">
+    <table border="1" cellpadding="" cellmargin="0" width="400px"; style="height: 100px; text-align: center; background: #acb7a6; margin-left: 430px; margin-top: 100px;">
+        <thead>
+            <tr style="background-color: rgb(176, 176, 191);">
+                <th>Name</th>
+                <th>Age</th>
+                <th>Address</th>
+            </tr>
+        </thead>
+        <tbody id="body">
+        </tbody>
+    </table>
+    <script>
+        let student=[
+            {
+                name:"farax",
+                age:40,
+                address:"masalaha",
+            },
+            {
+                name:"jimcaale",
+                age:50,
+                address:"new hargeysa"
+            },
+            {
+                name:"faduus",
+                age:60,
+                address:"Hero awr"
+            },
+            {
+                name:"nimcaan",
+                age:33,
+                address:"jigajiga yar"
+            }
+        ]
+        let tbody =""
+        for(i=0;i<4; i++){
+            tbody +=`
+            <tr>
+                <td>${student[i].name}</td>
+                <td>${student[i].age}</td>
+                <td>${student[i].address}</td>
+                `
+        }
+        document.getElementById("body").innerHTML=tbody
+    </script>
+</body>
+</html>
